@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    height: 80px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.item{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.item:hover{
+    background-color: black;
+    color: white;
+}
+
+.login-btn{
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #FF6868;
+    color: white;
+}
+
+.login-btn:hover{
+    background-color: #FF4E4E;
+}
+
