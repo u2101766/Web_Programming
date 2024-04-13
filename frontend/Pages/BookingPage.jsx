@@ -30,7 +30,7 @@ const data = [
   return (
     <div>
         {data.map(data =>(
-            <BookingList name={data.name} genre={data.genre} description={data.description} serviceTag={data.service}/>
+            <BookingList name={data.name} genre={data.genre} description={data.description} image={'melanie.jpg'} serviceTag={data.service}/>
         ))}
 
         

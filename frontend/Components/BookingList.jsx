@@ -1,7 +1,7 @@
 import React from 'react';
 import './BookingList.css';
 
-const BookingList = ({ serviceTag, name, genre,description }) => {
+const BookingList = ({ serviceTag, name, genre,description, image }) => {
 
     const getServiceTagColor = (service) => {
         if (service === 'Ambassador') {
@@ -18,7 +18,9 @@ const BookingList = ({ serviceTag, name, genre,description }) => {
   return (
     <div className='booking-list'>
         <div>
-            <div className="artist-profile"></div>
+            <div className="artist-profile">
+              <img className='artist-image' src={image} alt="" />
+            </div>
             <button className='book-btn' type="button">BOOK</button>
         </div>
       <div className="service-description">

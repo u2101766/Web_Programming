@@ -4,16 +4,18 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <nav>
-        <div><h1>Logo</h1></div>
-        <div className='nav-items'>
-            <div><Link className='item' to=''>Home</Link></div>
-            <div><Link className='item' to=''>Artist</Link></div>
-            <div><Link className='item' to=''>News</Link></div>
-            <div><Link className='item' to=''>Services</Link></div>
-            <div><button className='login-btn'>Login</button></div>
-        </div>
-    </nav>
+    <header>
+            <div class="head"><h1>MM LABELS  GROUP</h1></div>
+            <nav>
+                <Link className='link' to=''>HOME</Link>
+                <Link className='link' to=''>ARTISTS</Link>
+                <Link className='link' to=''>BOOK</Link>
+                <Link className='link' to=''>EVENTS</Link>
+                <Link className='link' to=''>SHOP</Link>
+                <Link className='link' to=''>FORUM</Link>
+            </nav>
+        </header>
+
   )
 }
 

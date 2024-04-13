@@ -11,10 +11,15 @@
     background-color: #ccc; /* Example background color */
     margin-right: 20px; /* Margin to separate the artist profile from other content */
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+}
+
+.artist-image{
+    width: 100%;
+    border-radius: 10px;
 }
 .artist-profile:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
 }
   
 .service-description {
