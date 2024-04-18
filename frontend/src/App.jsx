@@ -1,21 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import {Routes, Route } from 'react-router-dom'
-import BookingPage from '../Pages/BookingPage'
 import HomePage from '../Pages/HomePage'
+import BookingPage from '../Pages/BookingPage'
+import BookingDetail from '../Pages/BookingDetail'
+
 
 function App() {
 
 
   return (
-    <>
+    <main>
       <Routes>
-      <Route path='/' element={<HomePage/>} />
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/artists' element={''} />
         <Route path='/book' element={<BookingPage/>} />
-      </Routes>
-    </>
+        <Route path='/book/:id' element={<BookingDetail/>}/>
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/' element={<HomePage/>} />
+     </Routes>
+    </main>  
   )
 }
 
