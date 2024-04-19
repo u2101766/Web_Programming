@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body{
+    background: url('../background.jpg');
+}
 .poppins{
     font-family: 'Poppins', arial, helvetica, sans-serif;
+}
+
+.josefin{
+    font-family: "Josefin Sans", sans-serif;
 }
 
 h1{
@@ -28,4 +34,12 @@ main{
     padding-left: 12%;
     padding-right: 12%;
     padding-bottom: 2rem;
+}
+
+
+
+@media screen and (min-width: 1280px){
+    .booking-list{
+        width: 930px;
+    }
 }

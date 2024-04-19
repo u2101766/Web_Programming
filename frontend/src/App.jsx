@@ -3,6 +3,7 @@ import {Routes, Route } from 'react-router-dom'
 import HomePage from '../Pages/HomePage'
 import BookingPage from '../Pages/BookingPage'
 import BookingDetail from '../Pages/BookingDetail'
+import ShopPage from '../Pages/ShopPage'
 
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/artists' element={''} />
-        <Route path='/book' element={<BookingPage/>} />
+        <Route path='/book/' element={<BookingPage/>} />
         <Route path='/book/:id' element={<BookingDetail/>}/>
-        <Route path='/' element={<HomePage/>} />
+        <Route path='/shop' element={<ShopPage/>} />
         <Route path='/' element={<HomePage/>} />
      </Routes>
     </main>  

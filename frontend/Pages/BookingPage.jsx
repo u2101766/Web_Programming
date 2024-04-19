@@ -1,39 +1,74 @@
-import React from 'react'
-import BookingProfile from '../Components/BookingProfile'
-
-import data from '../sampleData' //for testing only
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import BookingProfile from '../Components/BookingProfile';
+import data from '../sampleData'; // Import sample data for testing
 
 const BookingPage = () => {
+    const [searchInput, setSearchInput] = useState('');
+    const [artistData, setArtistData] = useState([]);
 
-    const sampleData = data
+    useEffect(() => {
+        // Set initial artist data on component mount
+        setArtistData(data);
+    }, []);
 
-  return (
-    <div className='w-full h-full'>
-        <div className='w-full h-1/3 flex'>
-            <div className='w-1/2 flex flex-col justify-center items-center'>
-                <div>
-                    <h1 className='text-4xl'>Book Our Artist Now</h1>
-                    <p>Support our local artist</p>
-                </div>   
+    const searchArtist = () => {
+        // Filter artist data based on search input
+        const filteredArtists = data.filter(artist =>
+            artist.name.toLowerCase().includes(searchInput.toLowerCase())
+        );
+        setArtistData(filteredArtists);
+    };
+
+    return (
+        <div className='flex flex-col justify-center items-center'>
+            <div>
+                <div className='w-full flex mt-12'>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div>
+                            <h1 className='text-white text-4xl'>Book Our Artists Now</h1>
+                            <p className='text-white'>Support our local artists</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='w-max p-1 bg-white rounded-md mt-10'>
+                    <input
+                        className='w-80 focus:outline-none'
+                        type="text"
+                        placeholder='Search...'
+                        value={searchInput}
+                        onChange={(event) => {
+                            if (!event.target.value){
+                                setArtistData(data)
+                            }
+                            setSearchInput(event.target.value)
+                            
+                        }}
+                    />
+                    <button
+                        className='bg-blue-600 px-5 py-2 rounded-md text-white'
+                        onClick={searchArtist}
+                    >
+                        Search
+                    </button>
+                </div>
+
+                <h1 className='text-white text-xl my-10'>Top Artists</h1>
+
+                <div className='booking-list flex flex-wrap gap-8'>
+                    {artistData.map(artist => (
+                        <BookingProfile
+                            key={artist.id} // Ensure to provide a unique key for each item in the list
+                            image={artist.image}
+                            name={artist.name}
+                            rating={'5.0'}
+                            description={artist.description}
+                        />
+                    ))}
+                </div>
             </div>
-            <div className='w-1/2'>
-                <img className='' src="bookingHero.png" alt=""/>
-            </div> 
         </div>
+    );
+};
 
-        <div className='flex justify-between items-center'>
-           <h1 className='text-xl my-10'>Top Artists</h1> 
-           <h1 className='text-md text-gray-700'>More artists →</h1>
-        </div>
-        
-        <div className='flex flex-wrap gap-3'>
-            {sampleData.map(data => (    
-                    <BookingProfile image={'melanie.jpg'} name={data.name} rating={'5.0'} description={data.description}/>                
-            ))}
-        </div>
-    </div>
-  )
-}
-
-export default BookingPage
+export default BookingPage;

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-     <header className='w-screen h-56 flex flex-col justify-center items-center'>  
-            <div className='h-40'>
-                <h1 className='text-white text-4xl'>MM LABELS</h1>
+     <header className='w-screen h-48 flex flex-col justify-center items-center py-2'>  
+            <div className='h-40 w-full relative'>
+                <h1 className='text-white text-4xl text-center'>MM LABELS</h1>     
             </div>
             <nav className='w-full flex justify-between items-center gap-2'>
                 <Link to='/' className='flex-1 nav-bg px-6 py-3 text-white text-xl text-center'>Home</Link>
