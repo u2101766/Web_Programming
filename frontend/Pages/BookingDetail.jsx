@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 import data from '../sampleData'
 
@@ -12,7 +14,7 @@ const BookingDetail = () => {
   return (
     <div className='pt-16'>
         <Link to={'/book'}>
-            <img width={'40px'} src="../backBtn.png" alt="" />
+            <FontAwesomeIcon className='mr-2' size='2xl' icon={faArrowLeft}/>
         </Link>
         <div className='flex justify-center gap-20 mt-4'> 
             <div className='max-w-80 min-w-40 max-h-80 '>
@@ -27,6 +29,7 @@ const BookingDetail = () => {
             <div className='text-white poppins flex gap-3'>Genre: {sampleData[0].genre.map(genre => (<div>{genre}</div>))}</div>
             <div className='text-white poppins'>Birthday: {sampleData[0].birthday}</div>
             <div className='text-white poppins'>Music: {}</div>
+            <br /><hr />
             <form className='mt-12 flex flex-col gap-3' action="">
                 <h1 className='flex-1 text-white text-2xl'>Send Booking Request</h1>
                 <input className='rounded-md p-1 focus:outline-none poppins' placeholder='First name' type="text" />

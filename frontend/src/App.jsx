@@ -5,6 +5,7 @@ import BookingPage from '../Pages/BookingPage'
 import BookingDetail from '../Pages/BookingDetail'
 import ShopPage from '../Pages/ShopPage'
 import PendingRequestPage from '../Pages/PendingRequestPage'
+import ShopItemDetails from '../Pages/ShopItemDetails'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/book/' element={<BookingPage/>} />
         <Route path='/book/:id' element={<BookingDetail/>}/>
         <Route path='/shop' element={<ShopPage/>} />
+        <Route path='/shop/:id' element={<ShopItemDetails/>} />
         <Route path='/request' element={<PendingRequestPage/>} />
      </Routes>
     </main>  

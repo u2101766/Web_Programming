@@ -15,79 +15,79 @@ const PendingRequestPage = () => {
             </Link>  
             Pending Request
         </h1>
-        <div class="relative w-full overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
-                <thead class="poppins text-md text-white bg-blue-700">
+        <div className="relative w-full overflow-x-auto shadow-md sm:rounded-lg">
+            <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                <thead className="poppins text-md text-white bg-blue-700">
                     <tr>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                             Artist
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                             Status
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                             Service Requested
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                             Date
                         </th>
-                        <th scope="col" class="px-6 py-3">
-                            <span class="sr-only">Cancel</span>
+                        <th scope="col" className="px-6 py-3">
+                            <span className="sr-only">Cancel</span>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
-                        <th scope="row" class="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
                             SonaOne
                         </th>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             in review
                         </td>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             Event
                         </td>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             2 May 2024
                         </td>
-                        <td class="px-6 py-4 text-right">
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
                         </td>
                     </tr>
 
-                    <tr class="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
-                        <th scope="row" class="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
                             Altimet
                         </th>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             in review
                         </td>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             Ambassador
                         </td>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             28 Disember 2024
                         </td>
-                        <td class="px-6 py-4 text-right">
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
                         </td>
                     </tr>
 
-                    <tr class="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
-                        <th scope="row" class="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
                             Faizal Tahir
                         </th>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             in review
                         </td>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             Collaboration
                         </td>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                             12 Jun 2024
                         </td>
-                        <td class="px-6 py-4 text-right">
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
                         </td>
                     </tr>
                 </tbody>

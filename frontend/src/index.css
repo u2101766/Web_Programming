@@ -18,17 +18,73 @@ h1{
     font-family: 'Poppins', arial, helvetica, sans-serif;
 }
 
-/*------------------------------- NavBar--------------------------- */
-.nav-bg{
-    background-color: #2B2B2B
-}
-.nav-bg:hover{
-    background-color: #ccc;
+input, textarea{
     color: black;
 }
-header{
-    background-color: #202020;;
+
+input:focus{
+    border: none;
 }
+
+.red{
+    background-color: #FF0000;
+}
+
+/*------------------------------- NavBar--------------------------- */
+.nav-link{
+    border-radius: 8px;
+}
+.nav-link:hover{
+    background-color: transparent; /* Set background color to transparent when hovered */
+    color: white; /* Keep text color as white when hovered */
+    border-bottom: 0.5px solid white; /* Add a white border around the element when hovered */
+        
+
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    background-color: rgba(52, 58, 64, 0.5);
+}
+
+  .menu-btn .menu-nav {
+    position: absolute;
+    border-radius: 0.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+  }
+  
+  .menu-btn:hover .menu-nav {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .shop-hover .shop-dropdown {
+    border-radius: 0.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+  }
+  
+  .shop-hover:hover .shop-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  
+  
+  .menu-nav a:hover {
+    background-color: #2d3748;
+    border-radius: 0.25rem;
+  }
+  
 /* ---------------------------------------------------------------- */
 
 main{

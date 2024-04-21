@@ -36,10 +36,10 @@ const BookingPage = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-between items-center mt-10'>
-                    <div className='w-max p-1 bg-white rounded-md '>
+                <div className='flex gap-6  justify-between items-center mt-10'>
+                    <div className='flex p-1 bg-white rounded-md '>
                         <input
-                            className='w-80 focus:outline-none'
+                            className='w-80 focus:outline-none text-black'
                             type="text"
                             placeholder='Search...'
                             value={searchInput}
@@ -52,7 +52,7 @@ const BookingPage = () => {
                             }}
                         />
                         <button
-                            className='bg-red-400 px-5 py-2 rounded-md text-white'
+                            className='red px-5 py-2 rounded-md text-white'
                             onClick={searchArtist}
                         >
                             Search
@@ -61,7 +61,7 @@ const BookingPage = () => {
 
                     <div>
                         <Link to={'/request'}>
-                            <button className='bg-red-400 px-5 py-2 rounded-md text-white'>Pending Request
+                            <button className='flex justify-center items-center red px-5 py-2 rounded-md text-white'>Pending Request
                             <FontAwesomeIcon className='ml-2' icon={faHourglass}/>
                             </button>
                         </Link>
@@ -71,9 +71,9 @@ const BookingPage = () => {
 
                 
 
-                <h1 className='text-white text-xl my-10'>Top Artists</h1>
+                {/* <h1 className=' text-white text-xl my-10'>Top Artists</h1> */}
 
-                <div className='booking-list flex flex-wrap gap-8'>
+                <div className='mt-12 booking-list flex flex-wrap gap-8'>
                     {artistData.map(artist => (
                         <BookingProfile
                             key={artist.id} // Ensure to provide a unique key for each item in the list
