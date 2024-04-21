@@ -50,7 +50,18 @@ const BookingDetail = () => {
                 <input className='rounded-md p-1 focus:outline-none poppins' type="email" placeholder='Email' />
                 <input className='rounded-md p-1 focus:outline-none poppins' type="number" placeholder='Mobile number' />
                 <textarea placeholder='Request detail' className='rounded-md p-1 focus:outline-none poppins' name="" id="" cols="30" rows="10"></textarea>
-                <input className='text-white bg-blue-600 rounded-md py-3' type="submit" value='Submit' />
+                
+                <label class="block mb-2 text-xl font-medium text-white poppins" for="file_input">Attachment</label>
+                <input
+                type="file"
+                class="bg-blue-gray-300 rounded-md  block w-full text-sm text-white poppins
+                    file:mr-4 file:py-2 file:px-4 file:rounded-md
+                    file:border-0 file:text-sm file:font-semibold
+                    file:bg-white file:text-black
+                    hover:file:bg-pink-100"
+  />
+
+                <input className='text-white bg-red-400 rounded-md py-3' type="submit" value='Submit' />
             </form>
         </div>
     </div>

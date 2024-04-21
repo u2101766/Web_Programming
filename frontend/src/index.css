@@ -4,6 +4,7 @@
 
 body{
     background: url('../background.jpg');
+    color: white;
 }
 .poppins{
     font-family: 'Poppins', arial, helvetica, sans-serif;

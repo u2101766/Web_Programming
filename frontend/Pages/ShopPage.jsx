@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import CustomCarousel from '../Components/Carousel';
 import Isotope from 'isotope-layout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faStar } from '@fortawesome/free-solid-svg-icons'
+import RequestModal from '../Components/RequestModal';
 
 const ShopPage = () => {
   const [activeFilter, setActiveFilter] = useState('*');
@@ -35,9 +38,10 @@ const ShopPage = () => {
 
   return (
     <div>
+     
       <CustomCarousel/>
 
-      <div className="w-full">
+      <div className="w-full mt-12">
         <div className="title text-center">
           <h1 className="text-white josefin text-3xl">New Collection</h1>
         </div>
@@ -75,35 +79,92 @@ const ShopPage = () => {
         <hr />
 
         {/* Filtered items container */}
-        <div className="filter-container h-max">
-            <div className='w-80 filter-item m-4 best'>
+       
+        <div className="filter-container pl-16">
+            <div className='w-72 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 featured '>
+            <div className='w-72 filter-item m-4 featured '>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 new'>
+            <div className='w-72 filter-item m-4 new'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 new'>
+            <div className='w-72 filter-item m-4 new'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 best'>
+            <div className='w-72 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 new'>
+            <div className='w-72 filter-item m-4 new'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 featured'>
+            <div className='w-72 filter-item m-4 featured'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 best'>
+            <div className='w-72 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
-            <div className='w-80 filter-item m-4 new'>
+            <div className='w-72 filter-item m-4 new'>
                 <img className='w-full ' src="shopTest.png" alt="" />
+                <div className='flex justify-center gap-1 my-2'>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
+                </div>
             </div>
         </div>
+     
+        
 
       </div>
     </div>
