@@ -6,6 +6,8 @@ import BookingDetail from '../Pages/BookingDetail'
 import ShopPage from '../Pages/ShopPage'
 import PendingRequestPage from '../Pages/PendingRequestPage'
 import ShopItemDetails from '../Pages/ShopItemDetails'
+import ArtistManagement from '../Pages/ArtistManagement'
+import LoginPage from '../Pages/LoginPage'
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path='/shop' element={<ShopPage/>} />
         <Route path='/shop/:id' element={<ShopItemDetails/>} />
         <Route path='/request' element={<PendingRequestPage/>} />
+        <Route path='/manage' element={<ArtistManagement/>} />
+        <Route path='/login' element={<LoginPage/>} />
      </Routes>
     </main>  
   )

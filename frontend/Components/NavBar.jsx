@@ -46,7 +46,9 @@ const NavBar = () => {
                   
                 </div>
                 <Link to='/forum' className='nav-link px-2 py-1 text-white text-xl text-center'>Forum</Link>
-                <button className='red px-6 py-2 rounded-sm hover:bg-red-600'>Login</button>
+                <Link to={'/login'}>
+                  <button className='red px-6 py-2 rounded-sm hover:bg-red-600'>Login</button>
+                </Link>
             </nav> 
 
               

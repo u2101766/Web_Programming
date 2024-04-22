@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const BookingProfile = ({image, name}) => {
   return (
-        <div className='red w-52 p-2'>
+        <div className='bg-[#222222] w-52 p-2'>
             <h1 className='text-center'>{name}</h1>
             <Link to={`/book/${name}`}>
             <div className='h-52 overflow-hidden rounded-md flex justify-center items-center'>      
