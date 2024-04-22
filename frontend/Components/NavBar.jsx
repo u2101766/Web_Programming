@@ -29,20 +29,24 @@ const NavBar = () => {
                 <Link to='/book' className='nav-link px-2 py-1 text-white text-xl text-center'>Book</Link>
                 <Link to='/events' className='nav-link px-2 py-1 text-white text-xl text-center'>Events</Link>
 
-                <div>
-                  <button className='flex items-center gap-2 nav-link px-2 py-1 text-white text-xl text-center cursor-pointer' 
-                  onClick={shopDropdown}>Shop
+                <div className='shop-hover'>
+                  <div className='py-3'>
+                    <button className='flex items-center gap-2 nav-link px-2 py-1 text-white text-xl text-center cursor-pointer' 
+                  >Shop
                   <FontAwesomeIcon icon={faCaretDown}/>
                   </button>
+                  </div>
+                  
 
-                  {(dropDownVisibility) ? <div className='absolute top-14 flex  flex-col p-2 gap-1 bg-gray-800 rounded-md z-10'>
+                 <div className='shop-dropdown absolute top-14 flex  flex-col p-2 gap-1 bg-gray-800 rounded-md z-10'>
                     <Link to={'/shop'} className=' px-2 py-1 rounded-md hover:bg-black'>Merchandise</Link>
                     <Link className=' px-2 py-1 rounded-md hover:bg-black'>Cart</Link>
                     <Link className=' px-2 py-1 rounded-md hover:bg-black'>Purchase History</Link>
-                  </div> : ''}
+                  </div> 
                   
                 </div>
                 <Link to='/forum' className='nav-link px-2 py-1 text-white text-xl text-center'>Forum</Link>
+                <button className='red px-6 py-2 rounded-sm hover:bg-red-600'>Login</button>
             </nav> 
 
               

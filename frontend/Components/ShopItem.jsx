@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-const ShopItem = ({ price, ratingStar }) => {
+const ShopItem = ({ price, ratingStar, type }) => {
   // Create an array of star elements based on the ratingStar prop
   const stars = [];
   for (let i = 0; i < ratingStar; i++) {
@@ -11,7 +11,7 @@ const ShopItem = ({ price, ratingStar }) => {
   }
 
   return (
-    <Link to='/shop/shirt' className='block w-56 m-4 best'>
+    <Link to='/shop/shirt' className={`block w-56 m-4 ${type}`}>
       <div className='filter-item'>
         <img className='w-full' src='shopTest.png' alt='Shop Item' />
         <div className='flex justify-center gap-1 my-2'>

@@ -81,9 +81,9 @@ const ShopPage = () => {
 
         {/* Filtered items container */}
        
-        <div className="filter-container pl-16">
+        <div className="filter-container">
           <Link to={'/shop/shirt'}>
-            <div className='w-72 filter-item m-4 best'>
+            <div className='w-56 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -94,7 +94,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 best'>
+            <div className='w-56 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -105,7 +105,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 best'>
+            <div className='w-56 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -116,7 +116,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 featured'>
+            <div className='w-56 filter-item m-4 featured'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -127,7 +127,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 best'>
+            <div className='w-56 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -138,7 +138,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 new'>
+            <div className='w-56 filter-item m-4 new'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -149,7 +149,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 best'>
+            <div className='w-56 filter-item m-4 best'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -160,7 +160,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 featured'>
+            <div className='w-56 filter-item m-4 featured'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
@@ -171,7 +171,7 @@ const ShopPage = () => {
             </div>
             </Link>
             <Link to={'/shop'}>
-            <div className='w-72 filter-item m-4 new'>
+            <div className='w-56 filter-item m-4 new'>
                 <img className='w-full ' src="shopTest.png" alt="" />
                 <div className='flex justify-center gap-1 my-2'>
                     <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
