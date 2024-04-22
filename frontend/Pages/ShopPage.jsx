@@ -4,6 +4,7 @@ import Isotope from 'isotope-layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faStar } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import ShopItem from '../Components/ShopItem';
 
 
 const ShopPage = () => {
@@ -82,105 +83,16 @@ const ShopPage = () => {
         {/* Filtered items container */}
        
         <div className="filter-container">
-          <Link to={'/shop/shirt'}>
-            <div className='w-56 filter-item m-4 best'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 best'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 best'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 featured'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 best'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 new'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 best'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 featured'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
-            <Link to={'/shop'}>
-            <div className='w-56 filter-item m-4 new'>
-                <img className='w-full ' src="shopTest.png" alt="" />
-                <div className='flex justify-center gap-1 my-2'>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                    <FontAwesomeIcon icon={faStar} color='white' size='2x'/>
-                </div>
-            </div>
-            </Link>
+            
+           <ShopItem type={'best'} ratingStar={5} price={'RM 230'}/>
+           <ShopItem type={'featured'} ratingStar={5} price={'RM 180'}/>
+           <ShopItem type={'new'} ratingStar={5} price={'RM 200'}/>
+           <ShopItem type={'featured'} ratingStar={5} price={'RM 100'}/>
+           <ShopItem type={'new'} ratingStar={4} price={'RM 45'}/>
+           <ShopItem type={'best'} ratingStar={4} price={'RM 15'}/>
+           <ShopItem type={'best'} ratingStar={4} price={'RM 145'}/>
+           <ShopItem type={'new'} ratingStar={5} price={'RM 230'}/>
+
         </div>
      
         
