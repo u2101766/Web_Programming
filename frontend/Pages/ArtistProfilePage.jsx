@@ -6,8 +6,9 @@ const ArtistProfilePage = () => {
   return (
     <div className='px-[12%] flex flex-col justify-center items-center'>
         <h1 className='text-center text-4xl josefin'>{id}</h1>
-        <div className='w-[50%] flex justify-center'>
-            <img src="https://assets.bharian.com.my/images/articles/18sono1.transformed.jpg" alt="" />
+        
+        <div className='max-w-96 max-h-96 overflow-hidden rounded-md'>      
+                <img className='w-full h-full object-cover rounded-md' src="https://assets.bharian.com.my/images/articles/18sono1.transformed.jpg" alt="" />
         </div>
 
         <p className='text-center my-4 josefin'><strong>About</strong><br/>

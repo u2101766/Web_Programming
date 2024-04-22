@@ -12,17 +12,20 @@ const BookingDetail = () => {
     
 
   return (
-    <div className='pt-16 mx-[12%]'>
+    <div className='py-16 mx-[12%]'>
         <Link to={'/book'}>
             <FontAwesomeIcon className='mr-2' size='2xl' icon={faArrowLeft}/>
         </Link>
-        <div className='flex justify-center gap-20 mt-4'> 
-            <div className='max-w-80 min-w-40 max-h-80 '>
-                <img className='rounded-md' width='100%' src={sampleData[0].image} alt="" />
+        <div className='flex flex-col md:flex-row justify-center gap-20 mt-4 '> 
+            <div className='max-w-80'>
+                <div className='h-80 overflow-hidden rounded-md flex justify-center items-center'>      
+                    <img className='w-full h-full object-cover rounded-md' src={sampleData[0].image} alt="" />
+                </div>
                 <p className='text-white text-md my-10'><strong>Description: </strong>
                     {sampleData[0].description}
                 </p>
             </div>
+            
         <div>
             <h1 className='text-white text-5xl mb-4'>{id}</h1>
             <div className='text-white poppins'>Career: {sampleData[0].career}</div>
@@ -30,6 +33,7 @@ const BookingDetail = () => {
             <div className='text-white poppins'>Birthday: {sampleData[0].birthday}</div>
             <div className='text-white poppins'>Music: {}</div>
             <br /><hr />
+
             <form className='mt-12 flex flex-col gap-3' action="">
                 <h1 className='flex-1 text-white text-2xl'>Send Booking Request</h1>
                 <input className='rounded-md p-1 focus:outline-none poppins' placeholder='First name' type="text" />

@@ -28,7 +28,7 @@ const ArtistPage = () => {
 
         <div className='flex flex-col gap-12 mt-8'>
             {artistData.map(artist => (
-                <ArtistProfile name={artist.name}/>
+                <ArtistProfile image={artist.image} name={artist.name}/>
             ))}
             
         </div>

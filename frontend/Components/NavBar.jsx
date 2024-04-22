@@ -27,7 +27,7 @@ const NavBar = () => {
                 <Link to='/' className='nav-link px-2 py-1 text-white text-xl text-center'>Home</Link>
                 <Link to='/artist' className='nav-link px-2 py-1 text-white text-xl text-center'>Artist</Link>
                 <Link to='/book' className='nav-link px-2 py-1 text-white text-xl text-center'>Book</Link>
-                <Link to='/events' className='nav-link px-2 py-1 text-white text-xl text-center'>Events</Link>
+                <Link to='/event' className='nav-link px-2 py-1 text-white text-xl text-center'>Events</Link>
 
                 <div className='shop-hover'>
                   <div className='py-3'>
@@ -62,7 +62,7 @@ const NavBar = () => {
                 <Link to='/' className='nav-link px-2 py-1 text-white text-xl text-center'>Home</Link>
                 <Link to='/artist' className='nav-link px-2 py-1 text-white text-xl text-center'>Artist</Link>
                 <Link to='/book' className='nav-link px-2 py-1 text-white text-xl text-center'>Book</Link>
-                <Link to='/events' className='nav-link px-2 py-1 text-white text-xl text-center'>Events</Link>
+                <Link to='/event' className='nav-link px-2 py-1 text-white text-xl text-center'>Events</Link>
                 <Link to='/forum' className='nav-link px-2 py-1 text-white text-xl text-center'>Forum</Link>
 
                 <div className='shop-hover'>

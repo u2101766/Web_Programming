@@ -3,7 +3,7 @@ const data =[{
   "career": "Singer-songwriter",
   "genre": ["Pop", "R&B"],
   "birthday": "November 14, 1986",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Yuna_-_Bandung_2016_%28cropped%29.jpg/220px-Yuna_-_Bandung_2016_%28cropped%29.jpg",
+  "image": "https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2015/11/yuna-1024x676.jpg",
   "description": "Yunalis Mat Zara'ai, known professionally as Yuna, is a Malaysian singer-songwriter. She rose to prominence with her debut album in 2008 and has since become an internationally acclaimed artist. Yuna's music blends pop, R&B, and soul influences."
 },
 {

@@ -10,9 +10,9 @@ import Footer from '../Components/Footer.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <NavBar/>
-    <ThemeProvider>
+      <ThemeProvider>
       <App/>
-    </ThemeProvider> 
+      </ThemeProvider> 
     <Footer/>
   </BrowserRouter>,
 )

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const PendingRequestPage = () => {
   return (
-    <div className='flex flex-col justify-center relative mx-10'>
+    <div className='flex flex-1 flex-col  relative mx-10'>
         <div className='mt-12'>
           
         </div>
@@ -15,7 +15,7 @@ const PendingRequestPage = () => {
             </Link>  
             Pending Request
         </h1>
-        <div className="relative w-full overflow-x-auto shadow-md sm:rounded-lg">
+        <div className="relative w-full overflow-x-auto shadow-md sm:rounded-lg my-4">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
                 <thead className="poppins text-md text-white bg-blue-700">
                     <tr>
@@ -73,6 +73,227 @@ const PendingRequestPage = () => {
                         </td>
                     </tr>
 
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
+                            Faizal Tahir
+                        </th>
+                        <td className="px-6 py-4">
+                            in review
+                        </td>
+                        <td className="px-6 py-4">
+                            Collaboration
+                        </td>
+                        <td className="px-6 py-4">
+                            12 Jun 2024
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Cancel</a>
+                        </td>
+                    </tr>
                     <tr className="bg-white border hover:bg-gray-50 dark:hover:bg-gray-600">
                         <th scope="row" className="px-6 py-4 font-semibold text-black whitespace-nowrap">
                             Faizal Tahir

@@ -10,13 +10,14 @@ import ArtistManagement from '../Pages/ArtistManagement'
 import LoginPage from '../Pages/LoginPage'
 import ArtistPage from '../Pages/ArtistPage'
 import ArtistProfilePage from '../Pages/ArtistProfilePage'
+import EventPage from '../Pages/EventPage'
 
 
 function App() {
 
 
   return (
-    <main>
+    <main className='flex-1 min-h-[79vh]'>
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/artist' element={<ArtistPage/>} />
@@ -24,6 +25,7 @@ function App() {
         <Route path='/book/' element={<BookingPage/>} />
         <Route path='/book/:id' element={<BookingDetail/>}/>
         <Route path='/shop' element={<ShopPage/>} />
+        <Route path='/event' element={<EventPage/>} />
         <Route path='/shop/:id' element={<ShopItemDetails/>} />
         <Route path='/request' element={<PendingRequestPage/>} />
         <Route path='/manage' element={<ArtistManagement/>} />
