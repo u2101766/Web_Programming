@@ -12,7 +12,7 @@ const BookingDetail = () => {
     
 
   return (
-    <div className='pt-16'>
+    <div className='pt-16 mx-[12%]'>
         <Link to={'/book'}>
             <FontAwesomeIcon className='mr-2' size='2xl' icon={faArrowLeft}/>
         </Link>

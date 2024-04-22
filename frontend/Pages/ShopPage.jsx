@@ -82,7 +82,7 @@ const ShopPage = () => {
 
         {/* Filtered items container */}
        
-        <div className="filter-container">
+        <div className="filter-container mx-[12%]">
             
            <ShopItem type={'best'} ratingStar={5} price={'RM 230'}/>
            <ShopItem type={'featured'} ratingStar={5} price={'RM 180'}/>

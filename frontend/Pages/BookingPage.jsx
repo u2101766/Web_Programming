@@ -24,7 +24,7 @@ const BookingPage = () => {
     };
 
     return (
-        <div className='flex flex-col justify-center items-center relative'>
+        <div className='flex flex-col justify-center items-center relative py-6'>
             
             <div>
                 <div className='w-full flex mt-12'>

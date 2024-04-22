@@ -8,6 +8,8 @@ import PendingRequestPage from '../Pages/PendingRequestPage'
 import ShopItemDetails from '../Pages/ShopItemDetails'
 import ArtistManagement from '../Pages/ArtistManagement'
 import LoginPage from '../Pages/LoginPage'
+import ArtistPage from '../Pages/ArtistPage'
+import ArtistProfilePage from '../Pages/ArtistProfilePage'
 
 
 function App() {
@@ -17,7 +19,8 @@ function App() {
     <main>
       <Routes>
         <Route path='/' element={<HomePage/>} />
-        <Route path='/artists' element={''} />
+        <Route path='/artist' element={<ArtistPage/>} />
+        <Route path='/artistprofile/:id' element={<ArtistProfilePage/>} />
         <Route path='/book/' element={<BookingPage/>} />
         <Route path='/book/:id' element={<BookingDetail/>}/>
         <Route path='/shop' element={<ShopPage/>} />
