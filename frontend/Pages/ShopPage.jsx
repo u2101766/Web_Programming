@@ -84,14 +84,14 @@ const ShopPage = () => {
        
         <div className="filter-container mx-[12%]">
             
-           <ShopItem type={'best'} ratingStar={5} price={'RM 230'}/>
-           <ShopItem type={'featured'} ratingStar={5} price={'RM 180'}/>
-           <ShopItem type={'new'} ratingStar={5} price={'RM 200'}/>
-           <ShopItem type={'featured'} ratingStar={5} price={'RM 100'}/>
-           <ShopItem type={'new'} ratingStar={4} price={'RM 45'}/>
-           <ShopItem type={'best'} ratingStar={4} price={'RM 15'}/>
-           <ShopItem type={'best'} ratingStar={4} price={'RM 145'}/>
-           <ShopItem type={'new'} ratingStar={5} price={'RM 230'}/>
+           <ShopItem type={'best'} ratingStar={5} price={'230'}/>
+           <ShopItem type={'featured'} ratingStar={5} price={'180'}/>
+           <ShopItem type={'new'} ratingStar={5} price={'200'}/>
+           <ShopItem type={'featured'} ratingStar={5} price={'100'}/>
+           <ShopItem type={'new'} ratingStar={4} price={'45'}/>
+           <ShopItem type={'best'} ratingStar={4} price={'15'}/>
+           <ShopItem type={'best'} ratingStar={4} price={'145'}/>
+           <ShopItem type={'new'} ratingStar={5} price={'230'}/>
 
         </div>
      

@@ -5,7 +5,7 @@ import BookingPage from '../Pages/BookingPage'
 import BookingDetail from '../Pages/BookingDetail'
 import ShopPage from '../Pages/ShopPage'
 import PendingRequestPage from '../Pages/PendingRequestPage'
-import ShopItemDetails from '../Pages/ShopItemDetails'
+import ProductDetailPage from '../Pages/ProductDetailPage'
 import ArtistManagement from '../Pages/ArtistManagement'
 import LoginPage from '../Pages/LoginPage'
 import ArtistPage from '../Pages/ArtistPage'
@@ -26,7 +26,7 @@ function App() {
         <Route path='/book/:id' element={<BookingDetail/>}/>
         <Route path='/shop' element={<ShopPage/>} />
         <Route path='/event' element={<EventPage/>} />
-        <Route path='/shop/:id' element={<ShopItemDetails/>} />
+        <Route path='/shop/:id' element={<ProductDetailPage/>} />
         <Route path='/request' element={<PendingRequestPage/>} />
         <Route path='/manage' element={<ArtistManagement/>} />
         <Route path='/login' element={<LoginPage/>} />

@@ -13,13 +13,13 @@ const ShopItem = ({ price, ratingStar, type }) => {
   return (
     <Link to='/shop/shirt'>
       <div className={`filter-item w-56 m-4 ${type}`}>
-        <img className='w-full' src='shopTest.png' alt='Shop Item' />
+        <img className='w-full' src='../shopTest.png' alt='Shop Item' />
         <div className='flex justify-center gap-1 my-2'>
           {stars.map((star, index) => (
             <div key={index}>{star}</div>
           ))}
         </div>
-        <h1 className='text-center'>{price}</h1>
+        <h1 className='text-center'>RM {price}</h1>
       </div>
     </Link>
   );
