@@ -11,6 +11,8 @@ import LoginPage from '../Pages/LoginPage'
 import ArtistPage from '../Pages/ArtistPage'
 import ArtistProfilePage from '../Pages/ArtistProfilePage'
 import EventPage from '../Pages/EventPage'
+import PaymentPage from '../Pages/PaymentPage'
+import ShoppingCartPage from '../Pages/ShoppingCartPage'
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Route path='/request' element={<PendingRequestPage/>} />
         <Route path='/manage' element={<ArtistManagement/>} />
         <Route path='/login' element={<LoginPage/>} />
+        <Route path='/payment' element={<PaymentPage/>} />
+        <Route path='/cart' element={<ShoppingCartPage/>} />
      </Routes>
     </main>  
   )

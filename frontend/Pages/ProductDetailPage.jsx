@@ -62,7 +62,9 @@ const ProductDetailPage = () => {
 
           <div className='flex gap-3 mt-4'>
             <button className='py-2 px-4 bg-[#dc3545] rounded-md flex justify-center items-center gap-2'><FontAwesomeIcon icon={faCartShopping}/>Add to Cart</button>
-            <button className='px-4 py-2 bg-green-600 rounded-md'>Buy Now</button>
+            <Link to={'/payment'}>
+              <button className='px-4 py-2 bg-green-600 rounded-md'>Buy Now</button>
+            </Link>
           </div>
         </div>
       </div>

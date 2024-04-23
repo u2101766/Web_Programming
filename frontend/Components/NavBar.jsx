@@ -40,7 +40,7 @@ const NavBar = () => {
 
                  <div className='shop-dropdown absolute top-14 flex  flex-col p-2 gap-1 bg-gray-800 rounded-md z-10'>
                     <Link to={'/shop'} className=' px-2 py-1 rounded-md hover:bg-black'>Merchandise</Link>
-                    <Link className=' px-2 py-1 rounded-md hover:bg-black'>Cart</Link>
+                    <Link to={'/cart'} className=' px-2 py-1 rounded-md hover:bg-black'>Cart</Link>
                     <Link className=' px-2 py-1 rounded-md hover:bg-black'>Purchase History</Link>
                   </div> 
                   
@@ -73,7 +73,7 @@ const NavBar = () => {
 
                   <div className='shop-dropdown w-full flex flex-col justify-center items-center'>
                     <Link to={'/shop'} className=' px-2 py-1 rounded-md hover:bg-black'>Merchandise</Link>
-                    <Link className=' px-2 py-1 rounded-md hover:bg-black'>Cart</Link>
+                    <Link to={'/cart'} className=' px-2 py-1 rounded-md hover:bg-black'>Cart</Link>
                     <Link className=' px-2 py-1 rounded-md hover:bg-black'>Purchase History</Link>
                   </div>
                   
