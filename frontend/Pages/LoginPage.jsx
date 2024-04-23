@@ -69,6 +69,14 @@ const LoginPage = () => {
               <input type="password" required /> <i>Password</i>
             </div>
 
+            <div>
+              <select name="" id="" className='w-full p-2 bg-[#333] text-white rounded-md'>
+                <option value="">User</option>
+                <option value="">Artist</option>
+                <option value="">Oragnization</option>
+              </select>
+            </div>
+
             <div class="links">
               <a href="#">Forgot Password</a> <a href="#">Signup</a>
             </div>

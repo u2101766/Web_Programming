@@ -7,15 +7,18 @@ import {  faCartShopping , faArrowLeft } from '@fortawesome/free-solid-svg-icons
 const ArtistProfilePage = () => {
     const {id} = useParams()
   return (
-    <div className='px-[12%]'>
+    <div className='px-[12%] pt-8'>
 
       <Link to={'/artist'}>
           <FontAwesomeIcon  icon={faArrowLeft} size='2x'/>
       </Link>
 
       <div className='flex flex-col justify-center items-center'>
+          <br /><br />
           <h1 className='text-center text-4xl josefin'>{id}</h1>
-          
+          <br />
+          <div>Profile Music Photo Video</div>
+          <br />
           <div className='max-w-96 max-h-96 overflow-hidden rounded-md'>      
                   <img className='w-full h-full object-cover rounded-md' src="https://assets.bharian.com.my/images/articles/18sono1.transformed.jpg" alt="" />
           </div>

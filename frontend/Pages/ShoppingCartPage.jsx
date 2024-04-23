@@ -7,14 +7,15 @@ const sampleImage = [
   { id: 'img1', url: 'https://img.freepik.com/free-vector/colorful-gradient-liquid-shapes_23-2148278890.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707955200&semt=ais',
 price: 120 },
   { id: 'img2', url: 'https://img.freepik.com/premium-photo/twisted-ribbon-glowing-colorfull-background-design_955712-15789.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1712880000&semt=ais' ,
-  price: 120},
+  price: 80},
   { id: 'img3', url: 'https://img.freepik.com/premium-photo/impressive-3d-rendering-that-features-dynamic-wave-abstract-background_974732-36362.jpg',
-  price: 120 },
+  price: 20 },
 ];
 
 const ShoppingCartPage = () => {
 
   const [quantities, setQuantities] = useState({});
+  const [totalPrice, setTotalPrice] = useState(0);
 
   
   useEffect(() => {
@@ -24,6 +25,15 @@ const ShoppingCartPage = () => {
     });
     setQuantities(initialQuantities);
   }, []);
+
+  useEffect(() => {
+    let total = 0;
+    sampleImage.forEach((image) => {
+      const quantity = quantities[image.id] || 0;
+      total += image.price * quantity;
+    });
+    setTotalPrice(total);
+  }, [quantities]);
 
   // Function to handle incrementing quantity
   const incrementQuantity = (productId) => {
@@ -43,7 +53,7 @@ const ShoppingCartPage = () => {
 
   return (
     <div className='josefin mx-[12%]'>
-        
+
         <Link to={'/shop'}>
             <FontAwesomeIcon  icon={faArrowLeft} size='2x'/>
         </Link>
@@ -65,8 +75,8 @@ const ShoppingCartPage = () => {
                             <button className='w-[24px] text-black rounded-md bg-white' onClick={() => incrementQuantity(img.id)}>+</button>
                         </div>
 
-                        <p>RM {img.price}</p>
-                        
+                        <p>RM {img.price * (quantities[img.id] || 0)}</p>
+
                     </li>
                 ))}
                 </ul>
@@ -88,7 +98,7 @@ const ShoppingCartPage = () => {
                 </div>
 
                 <div>
-                    <p className='text-xl'>Total price:</p>
+                    <p className='text-xl'>Total price: RM {totalPrice || 0}</p>
 
                 </div>
 
